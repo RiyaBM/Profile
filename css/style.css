@@ -687,6 +687,10 @@ body.offcanvas .colorlib-nav-toggle {
   }
 }
 
+.address-divider{
+  border-right: #000;
+}
+
 .no-gutters {
   margin: 0;
   padding: 0;
@@ -1316,9 +1320,6 @@ body.offcanvas .colorlib-nav-toggle {
   display: table;
   text-align: center;
   background: #f2f3f7;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
   border-radius: 2px;
 }
 
@@ -1338,6 +1339,7 @@ body.offcanvas .colorlib-nav-toggle {
 
 .colorlib-feature .colorlib-text {
   padding-left: 120px;
+  justify-content: right;
   width: 100%;
 }
 
@@ -1370,6 +1372,32 @@ body.offcanvas .colorlib-nav-toggle {
     font-size: 28px;
   }
 }
+
+.colorlib-text .addresses {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.colorlib-text .addresses::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background: #ccc;
+}
+
+.colorlib-text .addresses p {
+  margin: 0;
+  padding: 0 20px;
+  width: 50%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
 
 .blog-entry {
   width: 100%;
